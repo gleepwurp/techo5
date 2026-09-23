@@ -50,9 +50,9 @@ description: >-
   Show the backyard camera on the Office Echo Show when backyard motion is
   detected.
 triggers:
-    - trigger: occupancy.detected
+  - trigger: occupancy.detected
     target:
-      entity_id: binary_sensor.backyard_person_occupancy
+      entity_id: binary_sensor.driveway_person_occupancy
     options:
       behavior: each
       for: '00:00:00'
